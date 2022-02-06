@@ -58,4 +58,5 @@ img_face_blurred = np.where(mask_img > 0, img_all_blurred, barca)
 
 plt.imshow(img_face_blurred)
 plt.axis("off")
+plt.title("blurred face")
 plt.show()
