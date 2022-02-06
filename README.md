@@ -38,6 +38,7 @@ python3 blurring_face_image.py --path barcelona.jpg
 ```
 # Face detect and blur with webcam
  Make sure you are in face_detect_and_blur_opencv folder and run this code in terminal.
-
+```bash
 python3 blurring_face_webcam.py
+```
 
