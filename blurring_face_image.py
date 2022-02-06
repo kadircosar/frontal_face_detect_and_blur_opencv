@@ -2,9 +2,21 @@ import cv2
 import matplotlib.pyplot as plt
 import math
 import numpy as np
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-p", "--path", help="path to the images", default="barcelona.jpg")
+
+args = vars(ap.parse_args())
+PATH = args["path"]
+
+
+class Config:
+    path: str = PATH
+
 
 # read image
-barca = cv2.imread("barcelona.jpg")
+barca = cv2.imread(f"{Config.path}")
 barca = cv2.cvtColor(barca, cv2.COLOR_BGR2RGB)
 
 # visualize image
