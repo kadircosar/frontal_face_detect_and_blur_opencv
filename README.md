@@ -6,7 +6,7 @@ For example:
    <img  src=https://imgyukle.com/f/2022/02/06/ofy5w8.png></a>
    <img  src=https://imgyukle.com/f/2022/02/06/ofyxKn.png></a>
    
-# Clone scripts
+# Clone 
 Run this code in terminal in the path  where you want it to be cloned :
 
 ```bash
@@ -17,5 +17,28 @@ unzip master.zip
 # Install requirements
 I recommend you create a new conda or a virtualenv environment to run your open-cv experiments as to not mess up dependencies of any existing project. Once you have activated the new environment, install the dependencies using pip.
 before running this code in terminal make sure activate your venv that you created for this project and run this code in path that you cloned face_detect_and_blur_opencv.
+```bash
+pip install -r face_detect_and_blur_opencv/requirements.txt
+```
 
+# Face detect and blur on a image 
+You need to choose an image and download it or just simply use barcelona.jpeg.
+İf you want to use diffrent image u just need to copy your image path with tag end of it.
+Then make sure you are in face_detect_and_blur_opencv folder and run this code in terminal.
+
+For example:
+
+this is your image path: home/users/hat.png
+```bash
+python3 blurring_face_image --path home/users/hat.png
+```
+or use barcelona.jpg
+
+```bash
+python3 blurring_face_image --path barcelona.jpg
+```
+# Face detect and blur with webcam
+ Make sure you are in face_detect_and_blur_opencv folder and run this code in terminal.
+
+python3 blurring_face_webcam
 
