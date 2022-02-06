@@ -44,17 +44,13 @@ plt.show()
 # create mask
 mask_img = np.zeros(barca.shape, dtype='uint8')
 
-circle_center = []  # list of circle center
-circle_radius = []  # list of circle radius
-for i in range(len(face_rectangle)):
-    for x, y, w, h in face_rectangle:
-        circle_center.append(((x + x + w) // 2, (y + y + h) // 2))
-        circle_radius.append(int(math.sqrt(w * w + h * h) // 2))
-        cv2.circle(mask_img, circle_center[i], circle_radius[i], (255, 255, 255), -1)
 
-
-img_all_blurred = cv2.medianBlur(barca, 99)
-img_face_blurred = np.where(mask_img > 0, img_all_blurred, barca)
+for x, y, w, h in face_rectangle:
+    circle_center = ((x + x + w) // 2, (y + y + h) // 2)
+    circle_radius = int(math.sqrt(w * w + h * h) // 2)
+    cv2.circle(mask_img, circle_center, circle_radius, (255, 255, 255), -1)
+    img_all_blurred = cv2.medianBlur(barca, 99)
+    img_face_blurred = np.where(mask_img > 0, img_all_blurred, barca)
 
 plt.imshow(img_face_blurred)
 plt.axis("off")
