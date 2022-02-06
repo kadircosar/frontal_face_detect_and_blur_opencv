@@ -10,8 +10,7 @@ For example:
 Run this code in terminal in the path  where you want it to be cloned :
 
 ```bash
-git clone https://github.com/kadircosar/kadircosar-face_detect_and_blur_opencv/archive/refs/heads/master.zip
-unzip master.zip
+git clone https://github.com/kadircosar/face_detect_and_blur_opencv.git
 ```
 
 # Install requirements
