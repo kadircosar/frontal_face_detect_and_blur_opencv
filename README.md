@@ -1,6 +1,6 @@
-# Face Detection and blurring with opencv
+# Frontal Face Detection and blurring with opencv
 
-This project for detectting faces and blurring them all.There is a two scripts one is for images, another one is for webcam.
+This project for detectting frontal faces and blurring them all.There is a two scripts one is for images, another one is for webcam.
 
 For example:
    <img  src=https://imgyukle.com/f/2022/02/06/ofy5w8.png></a>
@@ -10,20 +10,19 @@ For example:
 Run this code in terminal in the path  where you want it to be cloned :
 
 ```bash
-git clone https://github.com/kadircosar/face_detect_and_blur_opencv.git
+git clone https://github.com/kadircosar/frontal_face_detect_and_blur_opencv.git
 ```
 
 # Install requirements
 I recommend you create a new conda or a virtualenv environment to run your open-cv experiments as to not mess up dependencies of any existing project. Once you have activated the new environment, install the dependencies using pip.
-before running this code in terminal make sure activate your venv that you created for this project and run this code in path that you cloned face_detect_and_blur_opencv.
+before running this code in terminal make sure activate your venv that you created for this project and run this code in path that you cloned frontal_face_detect_and_blur_opencv.
 ```bash
-pip install -r face_detect_and_blur_opencv/requirements.txt
+pip install -r frontal_face_detect_and_blur_opencv/requirements.txt
 ```
 
 # Face detect and blur on a image 
 You need to choose an image and download it or just simply use barcelona.jpeg.
-İf you want to use diffrent image u just need to copy your image path with tag end of it.
-Then make sure you are in face_detect_and_blur_opencv folder and run this code in terminal.
+İf you want to use diffrent image u just need to copy your image path with tag end of it.But your image must be had only frontal face because we are using frontal face cascade otherwise it won't detect faces.Then make sure you are in frontal_face_detect_and_blur_opencv folder and run this code in terminal.
 
 For example:
 
