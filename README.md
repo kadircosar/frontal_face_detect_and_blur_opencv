@@ -3,8 +3,10 @@
 This project for detectting frontal faces and blurring them all.There is a two scripts one is for images, another one is for webcam.
 
 This is frontal face detect and blur on image:
-![](images/1.png)
-![](images/2.png)
+
+   <img width="600" src=images/1.png></a>
+   <img width="600" src=images/2.png></a>
+
    
 # Clone 
 Run this code in terminal in the path  where you want it to be cloned :
